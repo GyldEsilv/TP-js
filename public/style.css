@@ -1,0 +1,35 @@
+body
+{
+	background: url('PURPLECROCODILE.jpg');
+	background-size : cover;
+}
+
+
+#car {
+	width:250px;
+	margin: auto;
+
+}
+#car input{
+	width: 100%;
+	border-radius: 10px
+
+	
+}
+#rental {
+	width:250px;
+	margin: auto;
+}
+
+#rental input {
+	width: 100%;
+	border-radius: 10px
+}
+
+
+
+h1{
+	 font size: 100px;
+	 color: purple;
+	 text-align: center;
+}

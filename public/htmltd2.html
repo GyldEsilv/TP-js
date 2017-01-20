@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>THE PURPLE LIFE </title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div id="car">
+  
+      <h1/> Formulaire Drivy </h1>
+      <br />
+    
+      <input class="model"type="text" placeholder="Car Model"/>
+      
+      <br />
+      <input class="price-by-day" type="number" placeholder="Price By Day"/>
+      <br />
+      
+      
+      <input class="price-by-km" type="number" placeholder="Price by km"/>
+      <br />
+      
+    </div>
+    <div id="rental">
+      <input class="begin" type="date" placeholder="Rental begin date"/>
+      <br />
+      <input class="end" type="date" placeholder="Rental end date"/>
+      <br />
+      <br />
+      <input class="distance" type="number" placeholder="Distance in km"/>
+      <br />
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      <br />
+      <button id="compute">Compute</button>
+    </div>
+    
+    <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
